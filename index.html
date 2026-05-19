@@ -230,11 +230,35 @@
         .xhs-actions i:hover { color: #ff2442; }
         .xhs-share { margin-left: auto; }
 
-        /* 手機版適應 */
-        @media (max-width: 850px) {
+       /* 手機版適應 (保留電腦版樣式，只修改小螢幕) */
+       @media (max-width: 850px) {
+            /* 1. 減少最外層與白色主容器的留白，釋放左右空間 */
+            body {
+                padding: 15px 10px; 
+            }
+            .portfolio-container {
+                padding: 25px 15px; 
+            }
+            .project-card {
+                padding: 15px 12px; 
+            }
+            
+            /* 2. 微調標題大小，避免佔據過多高度 */
+            h1 {
+                font-size: 1.7rem;
+                margin-bottom: 25px;
+            }
+            h2 {
+                font-size: 1.3rem;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+
+            /* 3. 保留原本的小紅書卡片手機版適應 */
             .xhs-mockup { 
                 height: auto; 
                 flex-direction: column; 
+                margin-top: 15px;
             }
             .xhs-carousel-container { 
                 width: 100%; 
