@@ -83,7 +83,7 @@
             color: var(--sidebar-bg);
         }
 
-        /* ================= 新增：社群平台獨立展示卡片 (IG & Threads) ================= */
+        /* ================= 社群平台獨立展示卡片 ================= */
         .social-section-title {
             text-align: center; font-weight: bold; color: var(--sidebar-bg); margin-top: 40px; margin-bottom: 20px; font-size: 1.2rem; border-bottom: 2px dashed var(--border-color); padding-bottom: 10px;
         }
@@ -99,13 +99,18 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.03);
         }
         .social-platform-text {
-            flex: 1;
+            flex: 0 0 280px; /* 固定文字區寬度 */
         }
-        .social-platform-text {
-            flex: 0 0 280px; /* 固定文字區寬度，不需要佔到一半 */
+        .social-platform-text h4 {
+            font-size: 1.1rem;
+            color: var(--sidebar-bg);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         .social-platform-media {
-            flex: 1; /* 讓圖片區自動延伸，吃滿剩下的所有寬度 */
+            flex: 1; /* 讓圖片區自動延伸 */
             display: flex;
             gap: 12px;
             justify-content: center;
@@ -247,6 +252,7 @@
             .xhs-mockup { height: auto; flex-direction: column; margin-top: 15px; } .xhs-carousel-container { width: 100%; height: 400px; } .xhs-info-container { width: 100%; height: 400px; border-left: none; border-top: 1px solid #2c2c2c; }
             
             .social-platform-card { flex-direction: column; text-align: center; }
+            .social-platform-text { flex: 1; width: 100%; }
             .social-platform-text h4 { justify-content: center; }
             .social-platform-media { width: 100%; }
             .threads-media { flex-direction: column; }
@@ -267,9 +273,8 @@
             <h2>1. 數據驅動與社群影響力 (Social Media & Data Impact)</h2>
             
             <div class="project-card">
-                <h3>專案一: 咖啡廳主題自媒體經營 (爆款貼文案例)</h3>
+                <h3>專案一：咖啡廳主題自媒體經營</h3>
                 <p><span class="highlight">背景與挑戰：</span> 在社群平台自然演算法競爭激烈的環境下，新成立的個人品牌帳號初期缺乏知名度，難以快速觸及目標受眾。需要在零廣告預算的限制下，建立獨特的視覺記憶點，並找出能引發高度共鳴的內容切角來帶動流量。</p>
-                <p><span class="highlight">小紅書執行策略：</span> 針對小紅書，著重提供店家詳細資訊與交通指南等實用內容，藉由資訊的完整度來提升貼文收藏率。</p>
                 
                 <div class="xhs-mockup">
                     <div class="xhs-carousel-container">
@@ -341,11 +346,18 @@ A DAY Cafe（初訪）
                         </div>
                         
                         <div class="xhs-actions">
-                            <span><i class="fa-regular fa-heart"></i> 1.2w</span>
-                            <span><i class="fa-regular fa-star"></i> 8k</span>
-                            <span><i class="fa-regular fa-comment"></i> 324</span>
+                            <span><i class="fa-regular fa-heart"></i> 118</span>
+                            <span><i class="fa-regular fa-star"></i> 109</span>
+                            <span><i class="fa-regular fa-comment"></i> 2</span>
                             <span class="xhs-share"><i class="fa-solid fa-share-nodes"></i></span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="social-platform-card" style="margin-top: 20px;">
+                    <div class="social-platform-text" style="flex: 1 1 auto; max-width: 100%;">
+                        <h4><i class="fa-solid fa-book-bookmark" style="color: #ff2442;"></i> 小紅書執行策略</h4>
+                        <p>針對小紅書，將著重提供店家詳細資訊與交通指南等實用內容，藉由資訊的完整度來提升貼文收藏率。</p>
                     </div>
                 </div>
 
@@ -357,18 +369,17 @@ A DAY Cafe（初訪）
                         <p>Instagram 則主攻短影音策略，運用輕量化的影像搭配時下熱門的 Reels 音樂，順應演算法機制極大化推播效益。</p>
                     </div>
                     <div class="social-platform-media ig-media">
-                        <div class="video-placeholder">
-                            <i class="fa-solid fa-video" style="font-size: 2.5rem; margin-bottom: 15px; color: #ccc;"></i>
-                            <span style="font-weight: bold; font-size: 1.1rem; color: #666;">預留影片位置</span>
-                            <span style="font-size: 0.85rem; margin-top: 8px;">(取得影片後可置換為實際的 mp4 檔案)</span>
-                        </div>
-                        </div>
+                        <video controls autoplay loop muted playsinline style="max-height: 450px; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border: 1px solid #eee;">
+                            <source src="img/copy_CFB1EAD8-F3B3-4EF1-A8B2-4A7EA309C06A.mov">
+                            您的瀏覽器不支援影片標籤。
+                        </video>
+                    </div>
                 </div>
 
                 <div class="social-platform-card">
                     <div class="social-platform-text">
-                        <h4><i class="fa-brands fa-threads" style="color: #000000;"></i> Threads 爆款文字擴散</h4>
-                        <p>成功建立高質感的品牌識別，並精準掌握社群風向，創下單篇貼文突破 30 萬次觸及的紀錄，展現強大的文字擴散力與敏銳的社群直覺。</p>
+                        <h4><i class="fa-brands fa-threads" style="color: #000000;"></i> Threads 圖文共鳴策略</h4>
+                        <p>Threads 則主攻日常共鳴策略，運用充滿生活感的隨筆文字搭配高質感的情境照片，順應平台重視文字交流與分享串聯的演算法機制，成功創下 30 萬瀏覽次數的極大化推播效益。</p>
                     </div>
                     <div class="social-platform-media threads-media">
                         <img src="img/threads1.png" alt="Threads 爆款串文" onclick="openImageModal('img/threads1.png', 'Threads 爆款串文 (點擊關閉)')" style="cursor: zoom-in;">
