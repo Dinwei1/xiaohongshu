@@ -124,9 +124,8 @@
             transition: 0.3s;
         }
         .social-platform-media img:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
-        .threads-media img { width: calc(50% - 5px); }
         
-        /* 影片預留框樣式 */
+        /* ================= 影片預留框樣式 ================= */
         .video-placeholder {
             background: #f5f5f5;
             border: 2px dashed #ccc;
@@ -162,6 +161,13 @@
         }
         .branding-logo-box img:hover {
             transform: scale(1.02);
+        }
+        .logo-label {
+            margin-top: 12px;
+            color: var(--text-light);
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
 
         /* ================= 文案預覽卡片 ================= */
@@ -255,8 +261,6 @@
             .social-platform-text { flex: 1; width: 100%; }
             .social-platform-text h4 { justify-content: center; }
             .social-platform-media { width: 100%; }
-            .threads-media { flex-direction: column; }
-            .threads-media img { width: 100%; }
             
             .workflow-container { flex-direction: column; gap: 20px; } .workflow-arrow { transform: rotate(90deg); } .workflow-step { width: 100%; max-width: 250px; }
             .btn-group { flex-direction: column; width: 100%; } .preview-btn, .external-link-btn { justify-content: center; width: 100%; }
@@ -361,7 +365,7 @@ A DAY Cafe（初訪）
                     </div>
                 </div>
 
-                <div class="social-section-title">🚀 跨平台擴散成效 (Instagram & Threads)</div>
+                <div class="social-section-title"></div>
                 
                 <div class="social-platform-card">
                     <div class="social-platform-text">
@@ -381,9 +385,16 @@ A DAY Cafe（初訪）
                         <h4><i class="fa-brands fa-threads" style="color: #000000;"></i> Threads 圖文共鳴策略</h4>
                         <p>Threads 則主攻日常共鳴策略，運用充滿生活感的隨筆文字搭配高質感的情境照片，順應平台重視文字交流與分享串聯的演算法機制，成功創下 30 萬瀏覽次數的極大化推播效益。</p>
                     </div>
-                    <div class="social-platform-media threads-media">
-                        <img src="img/threads1.png" alt="Threads 爆款串文" onclick="openImageModal('img/threads1.png', 'Threads 爆款串文 (點擊關閉)')" style="cursor: zoom-in;">
-                        <img src="img/threads2.png" alt="Threads 流量數據 32萬次瀏覽" onclick="openImageModal('img/threads2.png', '高達 32 萬次自然觸及 (點擊關閉)')" style="cursor: zoom-in;">
+                </div>
+
+                <div class="image-production-section" style="margin-top: 20px;">
+                    <div class="section-header">
+                        <div class="article-meta-tag" style="margin-bottom: 0;"><i class="fa-brands fa-threads"></i> Threads 串文精選</div>
+                        <span class="swipe-hint"><i class="fa-solid fa-angles-right"></i> 向右滑動查看更多</span>
+                    </div>
+                    <div class="horizontal-scroll-container">
+                        <img src="img/threads1.jpg" alt="Threads 爆款串文" class="scroll-img" onclick="openImageModal('img/threads1.jpg', 'Threads 爆款串文（30萬次瀏覽）')">
+                        <img src="img/threads2.jpg" alt="Threads 流量數據" class="scroll-img" onclick="openImageModal('img/threads2.jpg', 'Threads 流量數據 30萬次瀏覽')">
                     </div>
                 </div>
 
@@ -433,7 +444,51 @@ A DAY Cafe（初訪）
                 <p><span class="highlight">專案成效：</span> 成功在全平台建立專業且一致的品牌形象。透過導入設計模板與明確的「對焦需求」流程，大幅降低了跨部門的溝通摩擦與設計修改成本。</p>
                 
                 <div class="branding-logo-box">
-                    <img src="img/nccu_tsf.png" alt="政大轉聯會 Logo 視覺重塑" onclick="openImageModal('img/nccu_tsf.png', '政大轉聯會視覺重塑與模板化工程')">
+                    <img src="img/nccu_tsf.png" alt="政大轉聯會 Logo 視覺重塑" onclick="openImageModal('img/nccu_tsf.png', '政大轉聯會 Logo 設計')">
+                    <div class="logo-label">Logo 設計</div>
+                </div>
+
+                <div class="image-production-section" style="margin-top: 30px;">
+                    <div class="section-header">
+                        <div class="article-meta-tag" style="margin-bottom: 0;"><i class="fa-solid fa-gift"></i> 社群圖文模板－抽獎文</div>
+                        <span class="swipe-hint"><i class="fa-solid fa-angles-right"></i> 向右滑動查看</span>
+                    </div>
+                    <div class="horizontal-scroll-container">
+                        <img src="img/3_0.png" alt="抽獎文1" class="scroll-img" onclick="openImageModal('img/3_0.png', '社群圖文模板－抽獎文 01')">
+                        <img src="img/4_0.png" alt="抽獎文2" class="scroll-img" onclick="openImageModal('img/4_0.png', '社群圖文模板－抽獎文 02')">
+                        <img src="img/5_0.png" alt="抽獎文3" class="scroll-img" onclick="openImageModal('img/5_0.png', '社群圖文模板－抽獎文 03')">
+                        <img src="img/6_0.png" alt="抽獎文4" class="scroll-img" onclick="openImageModal('img/6_0.png', '社群圖文模板－抽獎文 04')">
+                    </div>
+                </div>
+
+                <div class="image-production-section" style="margin-top: 25px;">
+                    <div class="section-header">
+                        <div class="article-meta-tag" style="margin-bottom: 0;"><i class="fa-solid fa-hourglass-half"></i> 社群圖文模板－活動倒數文</div>
+                        <span class="swipe-hint"><i class="fa-solid fa-angles-right"></i> 向右滑動查看</span>
+                    </div>
+                    <div class="horizontal-scroll-container">
+                        <img src="img/7_0.png" alt="倒數3天" class="scroll-img" onclick="openImageModal('img/7_0.png', '社群圖文模板－活動倒數 03')">
+                        <img src="img/8_0.png" alt="倒數2天" class="scroll-img" onclick="openImageModal('img/8_0.png', '社群圖文模板－活動倒數 02')">
+                        <img src="img/9_0.png" alt="倒數1天" class="scroll-img" onclick="openImageModal('img/9_0.png', '社群圖文模板－活動倒數 01')">
+                    </div>
+                </div>
+
+                <div class="image-production-section" style="margin-top: 25px;">
+                    <div class="section-header">
+                        <div class="article-meta-tag" style="margin-bottom: 0;"><i class="fa-solid fa-handshake"></i> 社群圖文模板－贊助廠商</div>
+                        <span class="swipe-hint"><i class="fa-solid fa-angles-right"></i> 向右滑動查看</span>
+                    </div>
+                    <div class="horizontal-scroll-container">
+                        <img src="img/10_0.png" alt="贊助廠商1" class="scroll-img" onclick="openImageModal('img/10_0.png', '社群圖文模板－贊助廠商 01')">
+                        <img src="img/11_0.png" alt="贊助廠商2" class="scroll-img" onclick="openImageModal('img/11_0.png', '社群圖文模板－贊助廠商 02')">
+                        <img src="img/12_0.png" alt="贊助廠商3" class="scroll-img" onclick="openImageModal('img/12_0.png', '社群圖文模板－贊助廠商 03')">
+                        <img src="img/13_0.png" alt="贊助廠商4" class="scroll-img" onclick="openImageModal('img/13_0.png', '社群圖文模板－贊助廠商 04')">
+                        <img src="img/14_0.png" alt="贊助廠商5" class="scroll-img" onclick="openImageModal('img/14_0.png', '社群圖文模板－贊助廠商 05')">
+                        <img src="img/15_0.png" alt="贊助廠商6" class="scroll-img" onclick="openImageModal('img/15_0.png', '社群圖文模板－贊助廠商 06')">
+                        <img src="img/16_0.png" alt="贊助廠商7" class="scroll-img" onclick="openImageModal('img/16_0.png', '社群圖文模板－贊助廠商 07')">
+                        <img src="img/17_0.png" alt="贊助廠商8" class="scroll-img" onclick="openImageModal('img/17_0.png', '社群圖文模板－贊助廠商 08')">
+                        <img src="img/18_0.png" alt="贊助廠商9" class="scroll-img" onclick="openImageModal('img/18_0.png', '社群圖文模板－贊助廠商 09')">
+                    </div>
                 </div>
             </div>
 
@@ -455,7 +510,7 @@ A DAY Cafe（初訪）
                 <h3>專案一: 結合 AI 工具的敏捷視覺產製流程</h3>
                 <p><span class="highlight">背景與挑戰：</span> 為了推廣開源設計軟體，需要產出一套結構完整的「Inkscape Logo 設計教學影片」與搭配的教學簡報。若採用傳統流程進行影片聽打、時間軸梳理與簡報從零排版，將耗費大量作業時間。</p>
                 <p><span class="highlight">執行策略：</span> 建立一套高效的跨平台 AI 工作流 (AI Workflow)，在確保教學內容易懂度與視覺美感的前提下，極大化地縮短多媒體教材的產製週期。<br><br>
-                我親自錄製並剪輯教學影片，隨後導入端到端 (End-to-End) 的 AI 協作流程：<br>
+                我親自錄製並剪輯教學影片，隨後導入端到端 (End-to-End) 的 AI協作流程：<br>
                 1. <b>智慧影音處理</b>：運用 CapCut 智慧語音辨識快速生成並校對教學字幕。<br>
                 2. <b>資訊萃取與結構化</b>：將腳本匯入 Gemini 進行內容解析，精準抓取核心重點並自動生成影片時間軸 (Timestamps)。<br>
                 3. <b>視覺生成與精修</b>：將 Gemini 梳理出的邏輯架構餵給 Gamma 瞬間產出簡報初稿，最後匯入 Canva 進行細部排版與視覺美感微調。</p>
@@ -554,7 +609,7 @@ A DAY Cafe（初訪）
                     <li><strong>白色：</strong> 修飾毛孔，讓膚質看起來更加平滑，可用來提亮、提升臉部及五官輪廓立體度。</li>
                     <li><strong>藍/紫色：</strong> 改善蠟黃的膚色，可用於黑眼圈校色或膚色蠟黃處。</li>
                     <li><strong>綠色：</strong> 改善痘痘或過敏等肌膚問題帶來的皮膚泛紅，讓皮膚提升透明感！</li>
-                    <li><strong>紅/粉色：</strong> 適合皮膚白皙的人，可以讓白皙的妳提升仙氣感，使氣色更紅潤。</li>
+                    <li><strong>紅/粉色：</strong> 適合皮膚白皙的人，可以讓白皙的妳提升仙氣感，使氣色更紅潤.</li>
                 </ul>
             </div>
             <div style="text-align: center; margin-top: 30px;">
